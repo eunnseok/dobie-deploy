@@ -45,9 +45,9 @@ else
 fi
 
 cd /var/dobie/data
-sudo wget https://raw.githubusercontent.com/ko2sist/dobie-deploy/main/data/user.json
-sudo wget https://raw.githubusercontent.com/ko2sist/dobie-deploy/main/data/project.json
-sudo wget https://raw.githubusercontent.com/ko2sist/dobie-deploy/main/data/refreshToken.json
+sudo wget https://raw.githubusercontent.com/eunnseok/dobie-deploy/main/data/user.json
+sudo wget https://raw.githubusercontent.com/eunnseok/dobie-deploy/main/data/project.json
+sudo wget https://raw.githubusercontent.com/eunnseok/dobie-deploy/main/data/refreshToken.json
 cd ~
 
 # Docker network 생성
@@ -61,7 +61,7 @@ fi
 
 # 4. docker-compose.yaml 가져온 후 실행
 echo "Dobie의 docker-compose.yaml 을 가져옵니다."
-wget https://raw.githubusercontent.com/ko2sist/dobie-deploy/main/docker-compose.yaml
+wget https://raw.githubusercontent.com/eunnseok/dobie-deploy/main/docker-compose.yaml
 sudo docker compose -f docker-compose.yaml up -d
 
 echo "스크립트 실행이 완료되었습니다."
