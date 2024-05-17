@@ -6,6 +6,7 @@ services:
       - 443:443
     volumes:
       - /var/dobie/nginx:/etc/nginx/conf.d
+      - /etc/letsencrypt:/etc/letsencrypt
     container_name : nginx
     networks:
       - dobie
@@ -18,6 +19,8 @@ services:
       - /var/dobie/data:/data
       - /var/dobie/nginx:/nginx
       - /var/run/docker.sock:/var/run/docker.sock
+      - /var/dobie/ssl:/getSSL_pipe
+      - /logfile.log:/logfile.log
     container_name: dobie-be
     depends_on:
       - nginx
