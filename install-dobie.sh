@@ -204,6 +204,7 @@ fi
 
 
 # 8. docker-compose.yaml 가져온 후 실행
+sudo apt install git
 git clone https://oauth2:rYWbAwDm9hUVynwz5PHp@lab.ssafy.com/s10-final/S10P31B101.git
 echo "Dobie의 docker-compose.yaml 을 가져옵니다."
 wget https://raw.githubusercontent.com/eunnseok/dobie-deploy/main/docker-compose.yaml
