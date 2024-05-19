@@ -208,7 +208,7 @@ sudo apt install git
 git clone https://oauth2:rYWbAwDm9hUVynwz5PHp@lab.ssafy.com/s10-final/S10P31B101.git
 
 export IP_ADDRESS=$(curl -4 ifconfig.me)
-echo "REACT_APP_SERVER=http://$IP_ADDRESS:8010/api/user" > ./S10P31B101/frontend/.env
+echo "REACT_APP_SERVER=http://$IP_ADDRESS:8010/api" > ./S10P31B101/frontend/.env
 
 
 
